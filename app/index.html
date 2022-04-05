@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Meus Eventos</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="icon" href="images/icones/favicon.ico" type="image/ico" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <script src="./js/site.js?rr=ee"></script>
+</head>
+
+<body>
+  <header class="headerBar">
+    <div class="appName">Meus Eventos</div>
+  </header>
+  <div class="content-logo text-center">
+    <img src="/images/logoPucMinas.png">
+  </div>
+  <div id="componente1" class="component">
+    <div class="">
+      <h1 class="componentTitle text-center">Meus Eventos</h1>
+    </div>
+    <div class="componentContent">
+
+      <div class="alert alert-warning alert-dismissible fade show" style="display: none;" role="alert">
+        <div class="txt-alert">
+        </div>
+        <button type="button" onclick="Site.hideAlert()" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+
+      <div class="field mt1">
+        <input type="text" placeholder="E-mail" id="email" name="email" autocomplete="off" />
+      </div>
+      <div class="field mt1">
+        <input placeholder="Senha" id="senha" name="senha" type="password" />
+      </div>
+      <div class="end mt1" style="display: flex; justify-content: space-between;">
+        <div style=" padding-left: 10px; padding-top: 10px;">
+          <input type="checkbox" id="perl" name="perl">
+          <label for="perl">Permanecer Logado</label>
+        </div>
+        <div style="padding-right: 10px;">
+          <a onclick="Site.Login()" id="login" class="btn default">Entrar</a>
+          <a href="/views/event_list.html" style="display: none;" id="login" class="btn default">Entrar</a>
+        </div>
+      </div>
+      <p class="text-center">Não é registrado? <a href="/views/register.html">Crie sua conta agora!</a></p>
+  </div>
+  </div>
+</body>
+</html>

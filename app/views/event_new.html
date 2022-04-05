@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Meus Eventos</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <script src="../js/site.js?rr=ee"></script>
+  <script src="../js/scripts_views/event.js"></script>
+</head>
+
+<body>
+  <header class="headerBar">
+    <div class="appName" style=" display: flex; justify-content: flex-start; ">
+        <div>
+        <a href="/views/event_list.html"><img src="/assets/seta-esquerda.png" class="icon-back"></a>
+        </div>
+        <div class="title-header">
+            Meus Eventos
+        </div>
+    </div>
+  </header>
+  <div id="componente1" class="component">
+    <div class="componentHeader">
+        <h1 class="componentTitle title-in-line">Novo Evento</h1>
+    </div>
+    <div class="componentContent">
+      <div class="alert alert-warning alert-dismissible fade show" style="display: none;" role="alert">
+        <div class="txt-alert">
+        </div>
+        <button type="button" onclick="Site.hideAlert()" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="field mt1">
+        <input type="datetime-local" placeholder="Data" id="data" name="data" autocomplete="off" />
+      </div>
+      <div class="field mt1">
+        <input type="text" placeholder="Descrição" id="descricao" name="descricao" autocomplete="off" />
+      </div>
+      <div class="field mt1">
+        <textarea placeholder="Observação" id="obs" name="obs" rows="5" cols="50"> </textarea>
+      </div>
+      <div class="end mt1" style="display: flex;justify-content: space-around;">
+        <p class=""><a id="btnBackToEventList" href="../views/event_list.html">Cancelar</a></p>
+        <button onclick="EventRoles.saveNewEvent()" class="btn default">Salvar</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

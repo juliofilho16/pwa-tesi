@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Meus Eventos</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="images/logoPucMinas.png" type="image/ico" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <script src="../js/site.js?rr=ee"></script>
+  <script src="../js/scripts_views/register.js"></script>
+</head>
+
+<body>
+  <header class="headerBar">
+    <div class="appName">Meus Eventos</div>
+  </header>
+  <div class="content-logo text-center">
+    <img src="/images/logoPucMinas.png">
+  </div>
+  <div id="componente1" class="component">
+    <div class="">
+      <h1 class="componentTitle text-center">Meus Eventos</h1>
+    </div>
+    <div class="componentContent">
+      <div class="alert alert-warning alert-dismissible fade show" style="display: none;" role="alert">
+        <div class="txt-alert">
+        </div>
+        <button type="button" onclick="Site.hideAlert()" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+     
+
+      <div class="field mt1">
+        <input type="text" placeholder="Nome" id="nome" name="nome" autocomplete="off" />
+      </div>
+      <div class="field mt1">
+        <input type="email" placeholder="E-mail" id="email" name="email" autocomplete="off" />
+      </div>
+      <div class="field mt1">
+        <input placeholder="Senha" id="senha" name="senha" type="password" />
+      </div>
+      <div class="field mt1">
+        <input placeholder="Confirme a Senha" id="senhaConfirmed" name="senhaConfirmed" type="password" />
+      </div>
+      <div class="end mt1" style="display: flex;justify-content: space-around;">
+        <p class=""><a href="/index.html">Voltar</a></p>
+        <button onclick="Register.saveNewAccont()" id="login" class="btn default">Salvar</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

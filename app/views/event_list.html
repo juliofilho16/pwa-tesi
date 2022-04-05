@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Meus Eventos</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="images/logoPucMinas.png" type="image/ico" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="../js/site.js?rr=ee"></script>
+    <script src="../js/scripts_views/event.js"></script>
+</head>
+
+<body>
+    <header class="headerBar">
+        <div class="appName" style=" display: flex; justify-content: flex-start; ">
+            <div>
+                <a style="display: none;" id="btnBack" href="/index.html"></a>
+                <a onclick="Site.logout()"><img src="/assets/seta-esquerda.png" class="icon-back"></a>
+            </div>
+            <div class="title-header">
+                Meus Eventos
+            </div>
+        </div>
+    </header>
+    <input type="hidden" id="page" name="page" value="event_list">
+    <div id="componente1" class="component">
+        <div class="componentHeader">
+            <h1 class="componentTitle">Lista de Eventos</h1>
+            <a href="../views/event_new.html" class="button button-small primary btn-a"><img
+                    src="../assets/plus_white.png" /></a>
+            <button onclick="EventRoles.showContentSearch()" class="button button-small primary ml1"><img
+                    src="../assets/search_white.png" /></button>
+        </div>
+        <div class="componentContent">
+            <div class="field mb1 content-search">
+                <input type="text" id="search" placeholder="Pesquise o evento..." autocomplete="off" />
+                <div class="div-search">
+                    <img onclick="EventRoles.searchEventList()" src="../assets/search.png" />
+                    <img onclick="EventRoles.closeContentSearch()" style="height: 22px;" src="../assets/close.png" />
+                </div>
+            </div>
+            <div id="legenda">
+                <div class="entry">
+                    <div class="entry-color status-event-vencido"></div>
+                    <div class="entry-text">Vencido</div>
+                </div>
+                <div class="entry">
+                    <div class="entry-color status-event-hoje"></div>
+                    <div class="entry-text">Hoje</div>
+                </div>
+                <div class="entry">
+                    <div class="entry-color status-event-nao-vencido"></div>
+                    <div class="entry-text">A vencer</div>
+                </div>
+            </div>
+            <div class="sob-loading">
+                <div class="loading-center" id="loading"></div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
