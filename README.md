@@ -11,21 +11,21 @@ usuário crie e monitore seus eventos para que ele não perca a data do ocorrido
 ## 1. Pagina Principal
 
 * Acesse a pagina principal
-![screenshot](images/readm/1-tela-principal.jpeg)
+![screenshot](app/images/readm/1-tela-principal.jpeg)
 
 
 ## 2. Criar Conta
 
 * Clique em "Crie sua conta agora"
 * Preencha os campos corretamente
-![screenshot](images/readm/2-cadastro.jpeg)
+![screenshot](app/images/readm/2-cadastro.jpeg)
 
 
 ## 3. Logar na Aplicação
 
 
 * Realize o login de acordo com seu cadastro
-![screenshot](images/readm/3-login.jpeg)
+![screenshot](app/images/readm/3-login.jpeg)
 
 
 ## 4. Visualizar os Eventos
@@ -33,10 +33,10 @@ usuário crie e monitore seus eventos para que ele não perca a data do ocorrido
 * Acesse a tele de Lista de Eventos
 * * No primeiro acesso não terá nenhum evento 
 
-![screenshot](images/readm/4.0-lista-eventos.jpeg)
+![screenshot](app/images/readm/4.0-lista-eventos.jpeg)
 
 * * Tela com eventos 
-![screenshot](images/readm/4.1-lista-eventos.jpeg)
+![screenshot](app/images/readm/4.1-lista-eventos.jpeg)
 
 
 ## 5. Cadastrar novo Evento
@@ -44,9 +44,9 @@ usuário crie e monitore seus eventos para que ele não perca a data do ocorrido
 * Clique no botão com simbolo de +
 * Preencha os campos corretamente
 * Salve seu evento
-![screenshot](images/readm/5.0-novo-evento.jpeg)
-![screenshot](images/readm/5.1-criando-novo-evento.jpeg)
-![screenshot](images/readm/5.2-evento-criado.jpeg)
+![screenshot](app/images/readm/5.0-novo-evento.jpeg)
+![screenshot](app/images/readm/5.1-criando-novo-evento.jpeg)
+![screenshot](app/images/readm/5.2-evento-criado.jpeg)
 
 
 ## 6. Atualizar Evento
@@ -56,10 +56,10 @@ usuário crie e monitore seus eventos para que ele não perca a data do ocorrido
 * Preencha os campos corretamente
 * Salve seu evento atualizado
 
-![screenshot](images/readm/6-atualizando-envento.jpeg)
+![screenshot](app/images/readm/6-atualizando-envento.jpeg)
 
 
 ## 7. Filtro
 
 Realize filtros de acordo com sua necessidade
-![screenshot](images/readm/7-fitro-eventos.jpeg)
+![screenshot](app/images/readm/7-fitro-eventos.jpeg)
